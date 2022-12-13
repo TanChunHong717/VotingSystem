@@ -13,7 +13,7 @@
                 <result column="name" property="name"/>
                 <result column="gender" property="gender"/>
                 <result column="address" property="address"/>
-                <result column="fingerprint_hash" property="fingerprintHash"/>
+                <result column="fingerprint_hash" property="fingerprint" jdbcType="Blob"/>
                 <result column="constituency_id" property="constituencyId"/>
                 <collection property="votedElectionList"
                             select="mapper.ElectionMapper.getVotedElection"

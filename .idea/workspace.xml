@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ba2f104-03b4-41fe-8162-3754c1537392" name="Changes" comment="First Upload">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SensorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fingerprint.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/PartyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/PartyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/Voter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitls/SqlSessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SqlSessionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoterMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ElectionMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ElectionMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ZKFPDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ZKFPDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitls/SqlSessionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ElectionMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ElectionMapperTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-config" />
+        <option value="Interface" />
+        <option value="mapper" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Il7MGiDsQ2voIvn6dls2zjMDi6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chunhong/program/java/VotingSystem&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34252873&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chunhong\program\java\votingSystem\src\main\resources" />
+      <recent name="C:\Users\chunhong\program\java\votingSystem\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SensorTest.testCapture">
+    <configuration name="FingerPrintSensorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FingerPrintSensorTest" />
+      <module name="votingSystem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZKFPDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ZKFPDemo" />
+      <module name="votingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElectionMapperTest.testGetElectionById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ElectionMapperTest" />
+      <option name="METHOD_NAME" value="testGetElectionById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FingerPrintSensorTest.testFingerPrintSensor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FingerPrintSensorTest" />
+      <option name="METHOD_NAME" value="testFingerPrintSensor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SensorTest.testCapture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="votingSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SensorTest" />
+      <option name="METHOD_NAME" value="testCapture" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SensorTest.testCapture" />
+        <item itemvalue="Application.FingerPrintSensorTest" />
+        <item itemvalue="Application.ZKFPDemo" />
+        <item itemvalue="JUnit.FingerPrintSensorTest.testFingerPrintSensor" />
+        <item itemvalue="JUnit.ElectionMapperTest.testGetElectionById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ba2f104-03b4-41fe-8162-3754c1537392" name="Changes" comment="" />
+      <created>1670744269107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670744269107</updated>
+      <workItem from="1670744270307" duration="1019000" />
+      <workItem from="1670851077250" duration="6288000" />
+      <workItem from="1670896405210" duration="336000" />
+      <workItem from="1670896750540" duration="542000" />
+      <workItem from="1670900418629" duration="102000" />
+      <workItem from="1670904813667" duration="1540000" />
+      <workItem from="1670910697977" duration="6455000" />
+      <workItem from="1670919452007" duration="249000" />
+      <workItem from="1670919711808" duration="72000" />
+      <workItem from="1670924404069" duration="9070000" />
+      <workItem from="1670935494741" duration="87000" />
+      <workItem from="1670938615607" duration="6000" />
+      <workItem from="1670938848762" duration="5479000" />
+      <workItem from="1670944480484" duration="457000" />
+      <workItem from="1670944954102" duration="58000" />
+    </task>
+    <task id="LOCAL-00001" summary="First Upload">
+      <created>1670919620084</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670919620084</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Upload" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/ZKFPDemo.java</url>
+          <line>479</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/ZKFPDemo.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/ZKFPDemo.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

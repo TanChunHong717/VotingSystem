@@ -1,6 +1,7 @@
 package pojo;
 
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Voter {
@@ -11,19 +12,19 @@ public class Voter {
     private String name;
     private Character gender;
     private String address;
-    private String fingerprintHash;
+    private byte[] fingerprint;
     private Integer constituencyId;
     private List<Election> votedElectionList;
 
     public Voter() {
     }
 
-    public Voter(String ic, String name, Character gender, String address, String fingerprintHash, Integer constituencyId, List<Election> votedElectionList) {
+    public Voter(String ic, String name, Character gender, String address, byte[] fingerprint, Integer constituencyId, List<Election> votedElectionList) {
         this.ic = ic;
         this.name = name;
         this.gender = gender;
         this.address = address;
-        this.fingerprintHash = fingerprintHash;
+        this.fingerprint = fingerprint;
         this.constituencyId = constituencyId;
         this.votedElectionList = votedElectionList;
     }
@@ -60,12 +61,12 @@ public class Voter {
         this.address = address;
     }
 
-    public String getFingerprintHash() {
-        return fingerprintHash;
+    public byte[] getFingerprint() {
+        return fingerprint;
     }
 
-    public void setFingerprintHash(String fingerprintHash) {
-        this.fingerprintHash = fingerprintHash;
+    public void setFingerprint(byte[] fingerprint) {
+        this.fingerprint = fingerprint;
     }
 
     public Integer getConstituencyId() {
@@ -91,7 +92,7 @@ public class Voter {
                 ", name='" + name + '\'' +
                 ", gender=" + gender +
                 ", address='" + address + '\'' +
-                ", fingerprintHash='" + fingerprintHash + '\'' +
+                ", fingerprint=" + Arrays.toString(fingerprint) +
                 ", constituencyId=" + constituencyId +
                 ", votedElectionList=" + votedElectionList +
                 '}';

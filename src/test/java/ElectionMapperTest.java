@@ -2,7 +2,7 @@ import mapper.ElectionMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import pojo.Election;
-import uitls.SqlSessionUtil;
+import utils.SqlSessionUtil;
 
 public class ElectionMapperTest {
     @Test

@@ -174,7 +174,7 @@ public class ZKFPDemo extends JFrame{
                 btnImg.resize(fpWidth, fpHeight);
                 mbStop = false;
                 workThread = new WorkThread();
-                workThread.start();// 绾跨▼鍚姩
+                workThread.start();// 线程启动
                 textArea.setText("Open succ!");
             }
         });
@@ -389,41 +389,41 @@ public class ZKFPDemo extends JFrame{
         java.io.DataOutputStream dos = new java.io.DataOutputStream(fos);
 
         int w = (((nWidth+3)/4)*4);
-        int bfType = 0x424d; // 浣嶅浘鏂囦欢绫诲瀷锛�0鈥�1瀛楄妭锛�
-        int bfSize = 54 + 1024 + w * nHeight;// bmp鏂囦欢鐨勫ぇ灏忥紙2鈥�5瀛楄妭锛�
-        int bfReserved1 = 0;// 浣嶅浘鏂囦欢淇濈暀瀛楋紝蹇呴』涓�0锛�6-7瀛楄妭锛�
-        int bfReserved2 = 0;// 浣嶅浘鏂囦欢淇濈暀瀛楋紝蹇呴』涓�0锛�8-9瀛楄妭锛�
-        int bfOffBits = 54 + 1024;// 鏂囦欢澶村紑濮嬪埌浣嶅浘瀹為檯鏁版嵁涔嬮棿鐨勫瓧鑺傜殑鍋忕Щ閲忥紙10-13瀛楄妭锛�
+        int bfType = 0x424d; // 位图文件类型�?0�?1字节�?
+        int bfSize = 54 + 1024 + w * nHeight;// bmp文件的大小（2�?5字节�?
+        int bfReserved1 = 0;// 位图文件保留字，必须�?0�?6-7字节�?
+        int bfReserved2 = 0;// 位图文件保留字，必须�?0�?8-9字节�?
+        int bfOffBits = 54 + 1024;// 文件头开始到位图实际数据之间的字节的偏移量（10-13字节�?
 
-        dos.writeShort(bfType); // 杈撳叆浣嶅浘鏂囦欢绫诲瀷'BM'
-        dos.write(changeByte(bfSize), 0, 4); // 杈撳叆浣嶅浘鏂囦欢澶у皬
-        dos.write(changeByte(bfReserved1), 0, 2);// 杈撳叆浣嶅浘鏂囦欢淇濈暀瀛�
-        dos.write(changeByte(bfReserved2), 0, 2);// 杈撳叆浣嶅浘鏂囦欢淇濈暀瀛�
-        dos.write(changeByte(bfOffBits), 0, 4);// 杈撳叆浣嶅浘鏂囦欢鍋忕Щ閲�
+        dos.writeShort(bfType); // 输入位图文件类型'BM'
+        dos.write(changeByte(bfSize), 0, 4); // 输入位图文件大小
+        dos.write(changeByte(bfReserved1), 0, 2);// 输入位图文件保留�?
+        dos.write(changeByte(bfReserved2), 0, 2);// 输入位图文件保留�?
+        dos.write(changeByte(bfOffBits), 0, 4);// 输入位图文件偏移�?
 
-        int biSize = 40;// 淇℃伅澶存墍闇�鐨勫瓧鑺傛暟锛�14-17瀛楄妭锛�
-        int biWidth = nWidth;// 浣嶅浘鐨勫锛�18-21瀛楄妭锛�
-        int biHeight = nHeight;// 浣嶅浘鐨勯珮锛�22-25瀛楄妭锛�
-        int biPlanes = 1; // 鐩爣璁惧鐨勭骇鍒紝蹇呴』鏄�1锛�26-27瀛楄妭锛�
-        int biBitcount = 8;// 姣忎釜鍍忕礌鎵�闇�鐨勪綅鏁帮紙28-29瀛楄妭锛夛紝蹇呴』鏄�1浣嶏紙鍙岃壊锛夈��4浣嶏紙16鑹诧級銆�8浣嶏紙256鑹诧級鎴栬��24浣嶏紙鐪熷僵鑹诧級涔嬩竴銆�
-        int biCompression = 0;// 浣嶅浘鍘嬬缉绫诲瀷锛屽繀椤绘槸0锛堜笉鍘嬬缉锛夛紙30-33瀛楄妭锛夈��1锛圔I_RLEB鍘嬬缉绫诲瀷锛夋垨2锛圔I_RLE4鍘嬬缉绫诲瀷锛変箣涓�銆�
-        int biSizeImage = w * nHeight;// 瀹為檯浣嶅浘鍥惧儚鐨勫ぇ灏忥紝鍗虫暣涓疄闄呯粯鍒剁殑鍥惧儚澶у皬锛�34-37瀛楄妭锛�
-        int biXPelsPerMeter = 0;// 浣嶅浘姘村钩鍒嗚鲸鐜囷紝姣忕背鍍忕礌鏁帮紙38-41瀛楄妭锛夎繖涓暟鏄郴缁熼粯璁ゅ��
-        int biYPelsPerMeter = 0;// 浣嶅浘鍨傜洿鍒嗚鲸鐜囷紝姣忕背鍍忕礌鏁帮紙42-45瀛楄妭锛夎繖涓暟鏄郴缁熼粯璁ゅ��
-        int biClrUsed = 0;// 浣嶅浘瀹為檯浣跨敤鐨勯鑹茶〃涓殑棰滆壊鏁帮紙46-49瀛楄妭锛夛紝濡傛灉涓�0鐨勮瘽锛岃鏄庡叏閮ㄤ娇鐢ㄤ簡
-        int biClrImportant = 0;// 浣嶅浘鏄剧ず杩囩▼涓噸瑕佺殑棰滆壊鏁�(50-53瀛楄妭)锛屽鏋滀负0鐨勮瘽锛岃鏄庡叏閮ㄩ噸瑕�
+        int biSize = 40;// 信息头所�?的字节数�?14-17字节�?
+        int biWidth = nWidth;// 位图的宽�?18-21字节�?
+        int biHeight = nHeight;// 位图的高�?22-25字节�?
+        int biPlanes = 1; // 目标设备的级别，必须�?1�?26-27字节�?
+        int biBitcount = 8;// 每个像素�?�?的位数（28-29字节），必须�?1位（双色）�??4位（16色）�?8位（256色）或�??24位（真彩色）之一�?
+        int biCompression = 0;// 位图压缩类型，必须是0（不压缩）（30-33字节）�??1（BI_RLEB压缩类型）或2（BI_RLE4压缩类型）之�?�?
+        int biSizeImage = w * nHeight;// 实际位图图像的大小，即整个实际绘制的图像大小�?34-37字节�?
+        int biXPelsPerMeter = 0;// 位图水平分辨率，每米像素数（38-41字节）这个数是系统默认�??
+        int biYPelsPerMeter = 0;// 位图垂直分辨率，每米像素数（42-45字节）这个数是系统默认�??
+        int biClrUsed = 0;// 位图实际使用的颜色表中的颜色数（46-49字节），如果�?0的话，说明全部使用了
+        int biClrImportant = 0;// 位图显示过程中重要的颜色�?(50-53字节)，如果为0的话，说明全部重�?
 
-        dos.write(changeByte(biSize), 0, 4);// 杈撳叆淇℃伅澶存暟鎹殑鎬诲瓧鑺傛暟
-        dos.write(changeByte(biWidth), 0, 4);// 杈撳叆浣嶅浘鐨勫
-        dos.write(changeByte(biHeight), 0, 4);// 杈撳叆浣嶅浘鐨勯珮
-        dos.write(changeByte(biPlanes), 0, 2);// 杈撳叆浣嶅浘鐨勭洰鏍囪澶囩骇鍒�
-        dos.write(changeByte(biBitcount), 0, 2);// 杈撳叆姣忎釜鍍忕礌鍗犳嵁鐨勫瓧鑺傛暟
-        dos.write(changeByte(biCompression), 0, 4);// 杈撳叆浣嶅浘鐨勫帇缂╃被鍨�
-        dos.write(changeByte(biSizeImage), 0, 4);// 杈撳叆浣嶅浘鐨勫疄闄呭ぇ灏�
-        dos.write(changeByte(biXPelsPerMeter), 0, 4);// 杈撳叆浣嶅浘鐨勬按骞冲垎杈ㄧ巼
-        dos.write(changeByte(biYPelsPerMeter), 0, 4);// 杈撳叆浣嶅浘鐨勫瀭鐩村垎杈ㄧ巼
-        dos.write(changeByte(biClrUsed), 0, 4);// 杈撳叆浣嶅浘浣跨敤鐨勬�婚鑹叉暟
-        dos.write(changeByte(biClrImportant), 0, 4);// 杈撳叆浣嶅浘浣跨敤杩囩▼涓噸瑕佺殑棰滆壊鏁�
+        dos.write(changeByte(biSize), 0, 4);// 输入信息头数据的总字节数
+        dos.write(changeByte(biWidth), 0, 4);// 输入位图的宽
+        dos.write(changeByte(biHeight), 0, 4);// 输入位图的高
+        dos.write(changeByte(biPlanes), 0, 2);// 输入位图的目标设备级�?
+        dos.write(changeByte(biBitcount), 0, 2);// 输入每个像素占据的字节数
+        dos.write(changeByte(biCompression), 0, 4);// 输入位图的压缩类�?
+        dos.write(changeByte(biSizeImage), 0, 4);// 输入位图的实际大�?
+        dos.write(changeByte(biXPelsPerMeter), 0, 4);// 输入位图的水平分辨率
+        dos.write(changeByte(biYPelsPerMeter), 0, 4);// 输入位图的垂直分辨率
+        dos.write(changeByte(biClrUsed), 0, 4);// 输入位图使用的�?�颜色数
+        dos.write(changeByte(biClrImportant), 0, 4);// 输入位图使用过程中重要的颜色�?
 
         for (int i = 0; i < 256; i++) {
             dos.writeByte(i);
@@ -455,9 +455,9 @@ public class ZKFPDemo extends JFrame{
 
     public static byte[] intToByteArray (final int number) {
         byte[] abyte = new byte[4];
-        // "&" 涓庯紙AND锛夛紝瀵逛袱涓暣鍨嬫搷浣滄暟涓搴斾綅鎵ц甯冨皵浠ｆ暟锛屼袱涓綅閮戒负1鏃惰緭鍑�1锛屽惁鍒�0銆�  
+        // "&" 与（AND），对两个整型操作数中对应位执行布尔代数，两个位都为1时输�?1，否�?0�?  
         abyte[0] = (byte) (0xff & number);
-        // ">>"鍙崇Щ浣嶏紝鑻ヤ负姝ｆ暟鍒欓珮浣嶈ˉ0锛岃嫢涓鸿礋鏁板垯楂樹綅琛�1  
+        // ">>"右移位，若为正数则高位补0，若为负数则高位�?1  
         abyte[1] = (byte) ((0xff00 & number) >> 8);
         abyte[2] = (byte) ((0xff0000 & number) >> 16);
         abyte[3] = (byte) ((0xff000000 & number) >> 24);
@@ -466,7 +466,7 @@ public class ZKFPDemo extends JFrame{
 
     public static int byteArrayToInt(byte[] bytes) {
         int number = bytes[0] & 0xFF;
-        // "|="鎸変綅鎴栬祴鍊笺��  
+        // "|="按位或赋值�??  
         number |= ((bytes[1] << 8) & 0xFF00);
         number |= ((bytes[2] << 16) & 0xFF0000);
         number |= ((bytes[3] << 24) & 0xFF000000);
