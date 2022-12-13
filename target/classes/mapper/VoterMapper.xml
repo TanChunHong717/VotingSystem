@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.VoterMapper">
+        <!--public Voter getVoterByIc(@Param("ic") String ic)-->
+        <select id="getVoterByIc"
+                resultMap="VoterByIcResultMap">
+                SELECT * FROM voter WHERE ic = #{ic}
+        </select>
+        <resultMap id="VoterByIcResultMap" type="Voter">
+                <id column="ic" property="ic"/>
+                <result column="name" property="name"/>
+                <result column="gender" property="gender"/>
+                <result column="address" property="address"/>
+                <result column="fingerprint_hash" property="fingerprintHash"/>
+                <result column="constituency_id" property="constituencyId"/>
+                <collection property="votedElectionList"
+                            select="mapper.ElectionMapper.getVotedElection"
+                            column="ic"/>
+        </resultMap>
+
+        <!--public Voter getVoterByConstituency(@Param("constituencyId") String constituencyId)-->
+        <select id="getVoterByConstituency"
+                resultType="Voter">
+                SELECT * FROM voter WHERE constituency_id = #{constituencyId}
+        </select>
+
+        <!--public void vote(@Param("ic") String ic, @Param("electionId") Integer electionId)-->
+        <insert id="vote">
+                INSERT INTO vote VALUES (ic, electionId)
+        </insert>
+</mapper>

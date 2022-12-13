@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.CandidateMapper">
+        <!--public Candidate getCandidateById(@Param("candidateId") Integer candidateId)-->
+        <select id="getCandidateById"
+                resultMap="CandidateResultMap">
+                SELECT * FROM candidate WHERE candidate_id = #{candidateId}
+        </select>
+        <resultMap id="CandidateResultMap" type="Candidate">
+                <id column="candidate_id" property="candidateId"/>
+                <result column="constituency_id" property="constituencyId"/>
+                <result column="election_id" property="electionId"/>
+                <result column="vote_number" property="voteNumber"/>
+                <association
+                        property="voter"
+                        select="mapper.VoterMapper.getVoterByIc"
+                        column="ic"/>
+                <association property="party"
+                        select="mapper.PartyMapper.getPartyById"
+                        column="party_id"/>
+        </resultMap>
+
+        <!--public List<Candidate> getCandidateByElectionAndConstituency(
+                @Param("electionId") Integer electionId,
+                @Param("constituencyId") Integer constituencyId)-->
+        <select id="getCandidateByElectionAndConstituency"
+                resultMap="CandidateResultMap">
+                SELECT * FROM candidate WHERE election_id = #{electionId} AND constituency_id = #{constituencyId}
+        </select>
+</mapper>
