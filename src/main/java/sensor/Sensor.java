@@ -35,6 +35,10 @@ public class Sensor {
         return FingerprintSensorEx.BlobToBase64(template, len[0]);
     }
 
+    public int compare(byte[] template1, byte[] template2) {
+        return FingerprintSensorEx.DBMatch(device, template1, template2);
+    }
+
     public void close() {
         FingerprintSensorEx.Terminate();
     }

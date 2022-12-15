@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ba2f104-03b4-41fe-8162-3754c1537392" name="Changes" comment="First Upload">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SensorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fingerprint.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/PartyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/PartyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/Voter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uitls/SqlSessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SqlSessionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoterMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ElectionMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ElectionMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ZKFPDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ZKFPDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uitls/SqlSessionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ElectionMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ElectionMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sensor/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sensor/Sensor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +140,9 @@
       <workItem from="1670938848762" duration="5479000" />
       <workItem from="1670944480484" duration="457000" />
       <workItem from="1670944954102" duration="58000" />
+      <workItem from="1671005911445" duration="5000" />
+      <workItem from="1671020590974" duration="6000" />
+      <workItem from="1671069733002" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="First Upload">
       <created>1670919620084</created>
