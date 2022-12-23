@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ba2f104-03b4-41fe-8162-3754c1537392" name="Changes" comment="First Upload">
+    <list default="true" id="2ba2f104-03b4-41fe-8162-3754c1537392" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sensor/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sensor/Sensor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
