@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -29,15 +36,68 @@
             <Font name="Baskerville Old Face" size="72.0" />
          </font>
       </Text>
-      <ImageView fitHeight="286.0" fitWidth="300.0" layoutX="584.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="221.0" fitWidth="192.0" layoutX="699.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/game-icons_vote.png" />
          </image>
       </ImageView>
-      <Button layoutX="890.0" layoutY="373.0" mnemonicParsing="false" text="VOTE">
+      <GridPane layoutX="545.0" layoutY="531.0" prefHeight="228.0" prefWidth="452.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.4000244140625" minWidth="10.0" prefWidth="130.4000244140625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.5999755859375" minWidth="10.0" prefWidth="269.5999755859375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField alignment="CENTER" editable="false" prefHeight="46.0" prefWidth="143.0" stylesheets="@css/textfield.css" text="IC/PASSPORT NUMBER" GridPane.rowIndex="1" />
+            <TextField alignment="CENTER" editable="false" prefHeight="90.0" prefWidth="224.0" stylesheets="@css/textfield.css" text="NAME" />
+            <TextField alignment="CENTER" editable="false" prefHeight="57.0" prefWidth="143.0" stylesheets="@css/textfield.css" text="TURN NUMBER" GridPane.rowIndex="4" />
+            <TextField prefHeight="57.0" prefWidth="143.0" stylesheets="@css/textfield_blue.css" GridPane.columnIndex="1" />
+            <TextField prefHeight="57.0" prefWidth="143.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <stylesheets>
+                  <URL value="@css/textfield.css" />
+                  <URL value="@css/textfield_blue.css" />
+               </stylesheets>
+            </TextField>
+            <TextField prefHeight="108.0" prefWidth="117.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <stylesheets>
+                  <URL value="@css/textfield.css" />
+                  <URL value="@css/textfield_blue.css" />
+               </stylesheets>
+            </TextField>
+            <TextField prefHeight="57.0" prefWidth="143.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <stylesheets>
+                  <URL value="@css/textfield.css" />
+                  <URL value="@css/textfield_blue.css" />
+               </stylesheets>
+            </TextField>
+            <TextField prefHeight="57.0" prefWidth="143.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <stylesheets>
+                  <URL value="@css/textfield.css" />
+                  <URL value="@css/textfield_blue.css" />
+               </stylesheets>
+            </TextField>
+            <TextField alignment="CENTER" editable="false" prefHeight="57.0" prefWidth="143.0" stylesheets="@css/textfield.css" text="PARLIAMENT" GridPane.rowIndex="2" />
+            <TextField alignment="CENTER" editable="false" prefHeight="57.0" prefWidth="143.0" stylesheets="@css/textfield.css" text="DUN" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="150.0" arcWidth="90.0" fill="#821c90" height="108.0" layoutX="901.0" layoutY="336.0" onMouseClicked="#switchToVotingPage" stroke="BLACK" strokeType="INSIDE" width="192.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Rectangle>
+      <Label layoutX="947.0" layoutY="362.0" onMouseClicked="#switchToVotingPage" text="VOTE" textFill="WHITE">
          <font>
-            <Font size="51.0" />
+            <Font name="System Bold" size="39.0" />
          </font>
-      </Button>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
    </children>
 </AnchorPane>

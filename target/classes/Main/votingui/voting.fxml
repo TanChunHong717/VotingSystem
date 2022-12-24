@@ -170,7 +170,7 @@
                 <Font name="Book Antiqua Bold" size="96.0" />
             </font>
         </Text>
-        <Button fx:id="submitButton" layoutX="719.0" layoutY="661.0" mnemonicParsing="false" onAction="#switchToClosingPage" text="Submit">
+        <Button fx:id="submitButton" layoutX="719.0" layoutY="661.0" mnemonicParsing="false" onAction="#switchToFingerprintPage" text="Submit">
             <font>
                 <Font size="30.0" />
             </font>

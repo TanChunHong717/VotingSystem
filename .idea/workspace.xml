@@ -5,7 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ba2f104-03b4-41fe-8162-3754c1537392" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ZKFingerReader__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/votingui/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/votingui/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Main/votingui/css/anchorpane_login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Main/votingui/css/textfield.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Main/votingui/css/textfield_blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Main/votingui/css/votebutton_homepage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/votingui/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Main/votingui/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/votingui/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Main/votingui/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/votingui/voting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Main/votingui/voting.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/votingui/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/votingui/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/votingui/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/votingui/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/votingui/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/votingui/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/votingui/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/votingui/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/votingui/voting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/votingui/voting.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CandidateMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CandidateMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ConstituencyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ConstituencyMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ElectionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ElectionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PartyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PartyMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VoterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VoterMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pojo/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Candidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pojo/Constituency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Constituency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pojo/Election.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Election.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pojo/Party.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Party.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pojo/Voter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/Voter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sensor/Sensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sensor/Sensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/SqlSessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/SqlSessionUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,28 +67,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chunhong/program/java/VotingSystem&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34252873&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/asus gaming/OneDrive/Desktop/UM/UM/Sem3/WIX2002-PROJECT MANAGEMENT/myge/src/main/resources/Main/votingui/css",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.34252873",
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus gaming\OneDrive\Desktop\UM\UM\Sem3\WIX2002-PROJECT MANAGEMENT\myge\src\main\resources\Main\votingui\css" />
+      <recent name="C:\Users\asus gaming\OneDrive\Desktop\UM\UM\Sem3\WIX2002-PROJECT MANAGEMENT\myge\src\main\resources\Main\votingui" />
+      <recent name="C:\Users\asus gaming\OneDrive\Desktop\UM\UM\Sem3\WIX2002-PROJECT MANAGEMENT\myge\src\main\java\Main" />
+      <recent name="C:\Users\asus gaming\OneDrive\Desktop\UM\UM\Sem3\WIX2002-PROJECT MANAGEMENT\myge\src\main\java" />
       <recent name="C:\Users\chunhong\program\java\votingSystem\src\main\resources" />
-      <recent name="C:\Users\chunhong\program\java\votingSystem\lib" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Main.votingui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SensorTest.testCapture">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="FingerPrintSensorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FingerPrintSensorTest" />
       <module name="votingSystem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.votingui.HelloApplication" />
+      <module name="votingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.votingui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,16 +126,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElectionMapperTest.testGetElectionById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="votingSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ElectionMapperTest" />
-      <option name="METHOD_NAME" value="testGetElectionById" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.SensorTest.testCapture" />
         <item itemvalue="Application.FingerPrintSensorTest" />
         <item itemvalue="Application.ZKFPDemo" />
         <item itemvalue="JUnit.FingerPrintSensorTest.testFingerPrintSensor" />
-        <item itemvalue="JUnit.ElectionMapperTest.testGetElectionById" />
       </list>
     </recent_temporary>
   </component>
